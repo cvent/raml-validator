@@ -19,9 +19,10 @@
   <properties>
     <maven-plugin-api.version>2.0</maven-plugin-api.version>
     <raml-parser-2.version>1.0.14</raml-parser-2.version>
+    <raml-yagi.version>1.0.14</raml-yagi.version>
     <junit.version>3.8.1</junit.version>
     <guava.version>18.0</guava.version>
-    <jackson-databind.version>2.4.4</jackson-databind.version>
+    <jackson-databind.version>2.9.0</jackson-databind.version>
   </properties>
 
   <dependencies>
@@ -68,9 +69,20 @@
           <artifactId>jackson-annotations</artifactId>
         </exclusion>
         <exclusion>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+        </exclusion>
+        <exclusion>
           <groupId>com.google.code.findbugs</groupId>
           <artifactId>jsr305</artifactId>
         </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.raml</groupId>
+      <artifactId>yagi</artifactId>
+      <version>${raml-yagi.version}</version>
+      <exclusions>
         <exclusion>
           <groupId>joda-time</groupId>
           <artifactId>joda-time</artifactId>
