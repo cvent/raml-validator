@@ -21,7 +21,7 @@
     <raml-parser-2.version>1.0.14</raml-parser-2.version>
     <raml-yagi.version>1.0.14</raml-yagi.version>
     <junit.version>3.8.1</junit.version>
-    <guava.version>18.0</guava.version>
+    <guava.version>33.4.0-jre</guava.version>
     <jackson-databind.version>2.9.0</jackson-databind.version>
   </properties>
 
